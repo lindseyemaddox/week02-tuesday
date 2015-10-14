@@ -1,0 +1,21 @@
+@media screen and (max-width: 1200px) {
+	html {
+		font-size: 15.5px;
+	}
+	.column {
+		width: 45%;
+		&:nth-child(2) {
+			margin-right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	html {
+		font-size: 14px;
+	}
+	.column {
+		width: 100%;
+		margin-right: 0;
+	}
+}

@@ -1,0 +1,87 @@
+@import 'common_resetCss'; 
+@import 'mixins';
+
+$primary: 	#5ba3d6;
+$secondary:	#2a6a98;
+$black:		#383838;
+$white:		#ffffff;
+
+html {
+  font-size: 14px;
+}
+body {
+	@include openSans();
+  	font-size: 1rem;
+  	background-color: $primary;
+}
+
+.inner {
+	max-width: 980px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+label {
+	margin: 0 0 5px;
+	color: $white;
+	font-size: .8em;
+	line-height: 1.3em;
+	text-transform: uppercase;
+	display: block;
+}
+
+input {
+	display: block;
+	width: 96%;
+	color: $secondary;
+	font-size: 1em;
+	font-style: italic;
+	background-color: $primary;
+	border: 3px solid $white;
+	padding: 10px 2%;
+	margin-bottom: 35px;
+	&:focus {
+		border: 3px solid $secondary;
+	}
+}
+
+select {
+	background-color: $primary;
+	color: $secondary;
+	border: 3px solid $white;
+	height: 45px;
+	width: 100%;
+	margin-bottom: 35px;
+}
+
+textarea {
+	background-color: $primary;
+	color: $secondary;
+	border: 3px solid $white;
+	width: 100%;
+	resize: none;
+	height: 200px;
+	margin-bottom: 35px;
+}
+
+section {
+	padding: 35px 0 0;
+}
+
+.column {
+	width: 30%;
+	margin-right: 4.5%;
+	display: inline-block;
+	vertical-align: top;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+
+
+
+@import 'responsive'; 
+
+
+
