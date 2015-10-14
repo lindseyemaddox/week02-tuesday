@@ -241,74 +241,151 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  background-color: #5ba3d6; }
+  font-size: 1rem; }
 
 .inner {
-  max-width: 980px;
+  max-width: 1313px;
   width: 80%;
   margin: 0 auto; }
 
-label {
-  margin: 0 0 5px;
-  color: #ffffff;
-  font-size: .8em;
-  line-height: 1.3em;
-  text-transform: uppercase;
-  display: block; }
+.hidden {
+  height: 0;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  transition: all 400ms ease; }
+  .hidden:hover {
+    height: auto; }
 
-input {
-  display: block;
-  width: 96%;
-  color: #2a6a98;
-  font-size: 1em;
-  font-style: italic;
-  background-color: #5ba3d6;
-  border: 3px solid #ffffff;
-  padding: 10px 2%;
-  margin-bottom: 35px; }
-  input:focus {
-    border: 3px solid #2a6a98; }
+.fa {
+  color: #5ca4d7;
+  cursor: pointer;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  transition: all 400ms ease; }
+  .fa:hover {
+    color: #ffffff;
+    background-color: #5ca4d7; }
+  .fa span {
+    display: none; }
 
-select {
-  background-color: #5ba3d6;
-  color: #2a6a98;
-  border: 3px solid #ffffff;
-  height: 45px;
-  width: 100%;
-  margin-bottom: 35px; }
+.blue {
+  background-color: #80bbe5; }
 
-textarea {
-  background-color: #5ba3d6;
-  color: #2a6a98;
-  border: 3px solid #ffffff;
-  width: 100%;
-  resize: none;
-  height: 200px;
-  margin-bottom: 35px; }
+.pink {
+  background-color: #d88eb3; }
+
+.yellow {
+  background-color: #e0b888; }
+
+.green {
+  background-color: #94be9a; }
 
 section {
-  padding: 35px 0 0; }
-
-.column {
+  color: #5ca4d7;
   width: 30%;
-  margin-right: 4.5%;
   display: inline-block;
-  vertical-align: top; }
-  .column:last-child {
+  margin: 40px 4.5% 66px 0; }
+  section:last-child {
     margin-right: 0; }
+  section div.product {
+    border: 2px solid #5ca4d7;
+    padding: 30px;
+    position: relative; }
+    section div.product i {
+      padding: 7px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 2px solid #5ca4d7;
+      border-top: none;
+      border-right: none; }
+  section img {
+    width: 100%; }
+  section div.buttons {
+    border: 2px solid #5ca4d7;
+    border-top: none;
+    position: relative; }
+    section div.buttons i {
+      width: 20%;
+      float: left;
+      text-align: center;
+      font-size: 1.3em;
+      border-right: 2px solid #5ca4d7;
+      padding: 20px 0; }
+      section div.buttons i:last-child {
+        border-left: 2px solid #5ca4d7;
+        border-right: none; }
+    section div.buttons::after {
+      content: '';
+      display: block;
+      clear: both; }
+    section div.buttons .color {
+      margin: 5% 7%;
+      padding: 10px 0;
+      width: 6%;
+      border: none;
+      text-indent: -9999px; }
+      section div.buttons .color span {
+        display: none; }
+  section div.description {
+    font-size: 1.8em;
+    padding: 25px 0; }
+    section div.description p.title {
+      float: left; }
+    section div.description p.price {
+      float: right;
+      text-align: right;
+      font-weight: bold; }
+    section div.description::after {
+      content: '';
+      display: block;
+      clear: both; }
+  section#blue .buttons > .color {
+    background-color: #80bbe5; }
+  section#pink .buttons > .color {
+    background-color: #d88eb3; }
+  section#yellow .buttons > .color {
+    background-color: #e0b888; }
+  section div.colors {
+    overflow: hidden;
+    position: absolute; }
 
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 15.5px; }
-  .column {
-    width: 45%; }
-    .column:nth-child(2) {
-      margin-right: 0; } }
+    font-size: 15.5px; } }
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 15px; } }
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 14.5px; } }
 
 @media screen and (max-width: 900px) {
   html {
-    font-size: 14px; }
-  .column {
-    width: 100%;
-    margin-right: 0; } }
+    font-size: 14px; } }
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 13.5px; } }
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 13px; } }
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12.5px; } }
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 12px; } }
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 11.5px; } }

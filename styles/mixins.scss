@@ -10,3 +10,10 @@
     transition: all 400ms ease;
 }
 
+@mixin clearfix() {
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
